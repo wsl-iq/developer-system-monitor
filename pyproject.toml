@@ -1,0 +1,21 @@
+[project]
+name = "developer-system-monitor"
+version = "1.0.0"
+description = "Professional Windows system monitoring and management application"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Developer System Monitor Team"}
+]
+
+[project.scripts]
+dsm = "python.main:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
