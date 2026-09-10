@@ -309,8 +309,8 @@ winget install Git.Git
 ### 1. Clone
 
 ```cmd
-git clone https://github.com/wsl-iq/DeveloperSystemMonitor.git
-cd DeveloperSystemMonitor
+git clone https://github.com/wsl-iq/developer-system-monitor.git
+cd developer-system-monitor
 ```
 
 ### 2. Build
