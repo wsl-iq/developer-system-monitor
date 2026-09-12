@@ -92,41 +92,26 @@ The architecture is intentionally separated into independent layers so native op
 
 ## Architecture
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                        Web Browser                           │
-│                                                              │
-│              Pure Vanilla JavaScript Frontend               │
-│          Dashboard • Charts • Management • Settings          │
-└──────────────────────────────┬───────────────────────────────┘
-                               │
-                         HTTP / WebSocket
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────┐
-│                    Python Backend / FastAPI                  │
-│                                                              │
-│       REST API • WebSocket • Processing • Alerts             │
-│       Reports • Configuration • Native Interface             │
-└──────────────────────────────┬───────────────────────────────┘
-                               │
-                             ctypes
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────┐
-│                    C++20 Native Core                         │
-│                                                              │
-│ Process • CPU • GPU • Memory • Disk • Network • Services     │
-│                         Hardware                             │
-└──────────────────────────────┬───────────────────────────────┘
-                               │
-                            Win32 API
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────┐
-│                     Windows Operating System                 │
-│          Win32 • PDH • WMI • DXGI • Registry • SCM           │
-└──────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["<b>Web Browser</b><br/><br/>Pure Vanilla JavaScript Frontend<br/>Dashboard • Charts • Management • Settings"]
+    B["<b>Python Backend / FastAPI</b><br/><br/>REST API • WebSocket • Processing • Alerts<br/>Reports • Configuration • Native Interface"]
+    C["<b>C++20 Native Core</b><br/><br/>Process • CPU • GPU • Memory • Disk<br/>Network • Services • Hardware"]
+    D["<b>Windows Operating System</b><br/><br/>Win32 • PDH • WMI • DXGI • Registry • SCM"]
+
+    A -->|"HTTP / WebSocket"| B
+    B -->|"ctypes"| C
+    C -->|"Win32 API"| D
+
+    classDef browser fill:#e8f4ff,stroke:#2196f3,stroke-width:2px,color:#111
+    classDef python fill:#fff4d6,stroke:#e0a800,stroke-width:2px,color:#111
+    classDef cpp fill:#e8f8ee,stroke:#28a745,stroke-width:2px,color:#111
+    classDef windows fill:#f0e8ff,stroke:#7952b3,stroke-width:2px,color:#111
+
+    class A browser
+    class B python
+    class C cpp
+    class D windows
 ```
 
 ### Layer Responsibilities
