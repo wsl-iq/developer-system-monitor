@@ -1,4 +1,5 @@
-<img src="assets/icon.ico" alt="Program Icon" width="150" height="150">
+<img src="assets/icon.png" alt="Program Icon" width="150" height="150">
+
 # Developer System Monitor
 
 <div align="center">
