@@ -50,6 +50,18 @@ The architecture is intentionally separated into independent layers so native op
 | Disk | Capacity, usage, read/write statistics |
 | Network | Adapters, bandwidth, connection statistics |
 
+---
+
+*<h1>Screenshots</h1>*
+
+| Screenshot | Screenshot | Screenshot |
+|:---:|:---:|:---:|
+| <img src="assets/screenshot-1.png" width="300"> | <img src="assets/screenshot-2.png" width="300"> | <img src="assets/screenshot-3.png" width="300"> |
+| <img src="assets/screenshot-4.png" width="300"> | <img src="assets/screenshot-5.png" width="300"> | <img src="assets/screenshot-6.png" width="300"> |
+| <img src="assets/screenshot-7.png" width="300"> | <img src="assets/screenshot-8.png" width="300"> | <img src="assets/screenshot-9.png" width="300"> |
+
+---
+
 ### Process Management
 
 - Full process enumeration
