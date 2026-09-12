@@ -2,7 +2,7 @@
   <img src="assets/icon.png" alt="Program Icon" width="150" height="150">
 </p>
 
-### **Developer System Monitor**
+<h1>Developer System Monitor</h1>
 
 <div align="center">
 
